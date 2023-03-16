@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  resources :posts
 
-  get "/articles", to: "articles#index"
-  get "/articles/:id", to: "articles#show"
+  #ルートurlはpostsコントローラーのindexを呼んでください
+  root to: "posts#index"
 end
 
 
