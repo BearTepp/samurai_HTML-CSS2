@@ -23,6 +23,6 @@ test:
 production:
   <<: *default
   database: samurai_production
-  username: root
+  username: BearTepp
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
